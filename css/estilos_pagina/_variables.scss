@@ -1,0 +1,21 @@
+// Tipografia 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+$roboto:  'Roboto Condensed', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+
+//colores
+
+$verde:#4B7669;
+$amarillo:#F8EF86;
+$verdeclaro:#9CC3B5;
+$blanco:rgba(#fff,.7);
+$letra:rgba(#000,.6);
+
+
+#services, #clientes, #noticias, #footer{
+	@include from(l){
+		margin-top:2em;
+	}
+}

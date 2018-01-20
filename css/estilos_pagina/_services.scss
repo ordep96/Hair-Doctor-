@@ -1,0 +1,41 @@
+#services{
+	padding-top:1.2em;
+	text-align:center;
+}
+
+.services-title{
+	font-family:$open-sans;
+	font-weight:300;
+	color:$letra;
+	span{
+		display:block;
+		margin-top:-2px;
+	}
+}
+
+
+.services{
+	padding-top:3em;
+
+
+	&__icono{
+		background:$verdeclaro;
+		padding:20px;
+		border-radius:50%;
+		color:#fff;
+		font-size:1.3em;
+	}
+
+	&__title{
+		padding-top:.2em;
+		font-family:$open-sans;
+		font-weight:300;
+		font-size:1.6em;
+		color:$letra;
+	}
+
+	&__description{
+		font-family:$roboto;
+		font-size:.95em;
+	}
+}

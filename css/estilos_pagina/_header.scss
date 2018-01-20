@@ -1,0 +1,127 @@
+#header{
+	background:$verde;
+	padding-bottom:2em;
+
+	@include from(l){
+		background:linear-gradient(
+			   $verde 70%,
+			   transparent 70%
+
+			);
+	}
+}
+
+.logo-center, .menu-center{
+	@include from(l){
+		@include crossCenter;
+		@include mainEnd;
+	}
+}
+.logo-center{
+	@include from(l){
+		@include mainStart;
+	}
+	
+}
+
+
+.logo{
+	text-align:center;
+	
+	@include from(l){
+		text-align:left;
+		margin-top:10px;
+	}
+
+
+	&__title{
+		text-transform:uppercase;
+		font-family:$roboto;
+		color:$blanco;
+		font-size:2em;
+		margin:10px 0 0 0;
+		font-weight:300;
+
+		@include from(l){
+			font-size:3rem;
+			line-height:.90em;
+		}
+		span{
+			color:$amarillo;
+			font-weight:600;
+		}
+	}
+
+
+	&__subtitle{
+		margin-top:0;
+		color:$blanco;
+		font-family:$open-sans;
+		font-size:.85em;
+	}
+}
+
+.menu-bar{
+	background:$amarillo;
+	line-height:2.5em;
+	overflow:hidden;
+	display:block;
+
+	@include from(l){
+		display:none;
+	}
+
+	.menu-btn{
+		float:right;
+		position:relative;
+		right:10px;
+		color:$verde;
+		font-size:1.5em;
+	}
+}
+
+.menu{
+	padding:0;
+	margin:0;
+	list-style:none;
+	background:$amarillo;
+	display:none;
+	
+	@include from(l){
+		display:block;
+		background:none;
+
+	}
+
+	&__item{
+	 	display:block;
+	 	border-bottom:.3px solid rgba($verde,.2);
+	 	padding-left:1em;
+	 	@include from(l){
+	 		display:inline-block;
+	 		border-right:.3px solid rgba($blanco,.2);
+	 		padding-right:1em;
+	 	}
+	}
+
+
+	&__link{
+		color:$verde;
+		text-transform:uppercase;
+		display:block;
+		line-height:2.5em;
+
+		@include from(l){
+			color:$blanco;
+			font-family:$roboto;
+			font-weight:300;
+			font-size:1.2em;
+			line-height:1.4em;
+			transition:.2s all;
+			&:hover{
+				color:$amarillo;
+			}
+		}
+
+	}
+}

@@ -1,0 +1,33 @@
+#noticias{
+	padding-top:1.2em;
+}
+
+
+.noticia{
+	text-align:center;
+
+	&__title{
+		font-family:$open-sans;
+		font-weight:300;
+		line-height:1em;
+		span{
+			display:block;
+			font-size:.70em;
+
+		}
+	}
+
+	&__img{
+		width:100%;
+	}
+
+	&__description{
+		font-family:$roboto;
+		text-align:justify;
+		font-size:.95em;
+		color:$letra;
+		
+	}
+
+}
+

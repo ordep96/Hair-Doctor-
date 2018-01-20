@@ -1,0 +1,42 @@
+#footer{
+	margin-top:1.2em;
+	background:$verde;
+	padding-bottom:1.2em;
+}
+
+
+.firma{
+	padding-top:1.2em;
+	
+	&__title{
+		color:#fff;
+		font-family:$roboto;
+		text-align:center;
+		font-size:.95em;
+	}
+}
+
+
+.sociales{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-align:center;
+	
+
+
+	&__item{
+		display:inline-block;
+		font-size:1.2em;
+		background:darken($verde,15%);
+		margin:.4em;
+		border-radius:50%;
+		padding:.5em;
+	}
+
+	&__link{
+		display:block;
+		color:$verde;
+	}	
+
+}
